@@ -1,0 +1,1 @@
+# temporitzador-pyside6
