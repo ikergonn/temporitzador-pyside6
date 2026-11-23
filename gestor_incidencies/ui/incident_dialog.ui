@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IncidentDialog</class>
+ <widget class="QDialog" name="IncidentDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Incidencia</string>
+  </property>
+  <layout class="QVBoxLayout" name="vertical_layout">
+   <item>
+    <layout class="QFormLayout" name="form_layout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="title_label">
+       <property name="text">
+        <string>Titol</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="title_edit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="description_label">
+       <property name="text">
+        <string>Descripcio</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QTextEdit" name="description_edit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="category_label">
+       <property name="text">
+        <string>Categoria</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="category_edit"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="priority_label">
+       <property name="text">
+        <string>Prioritat</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="priority_combo"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="status_label">
+       <property name="text">
+        <string>Estat</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="status_combo"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="assignee_label">
+       <property name="text">
+        <string>Responsable</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="assignee_edit"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="due_date_label">
+       <property name="text">
+        <string>Venciment</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="due_date_edit"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="tags_label">
+       <property name="text">
+        <string>Etiquetes</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="tags_edit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttons">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttons</sender>
+   <signal>accepted()</signal>
+   <receiver>IncidentDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttons</sender>
+   <signal>rejected()</signal>
+   <receiver>IncidentDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

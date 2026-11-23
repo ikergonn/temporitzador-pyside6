@@ -1,0 +1,50 @@
+[
+  {
+    "id": "INC-0001",
+    "title": "Error en iniciar sessio",
+    "description": "L'usuari indica que la finestra d'inici de sessio no mostra cap missatge quan la contrasenya es incorrecta.",
+    "category": "autenticacio",
+    "priority": "alta",
+    "status": "tancada",
+    "assignee": "equip-ui",
+    "created_at": "2026-08-07T08:00:00+00:00",
+    "updated_at": "2026-11-23T14:28:27+00:00",
+    "due_date": "2026-08-14",
+    "tags": [
+      "formulari",
+      "feedback"
+    ]
+  },
+  {
+    "id": "INC-0002",
+    "title": "La taula no conserva el filtre",
+    "description": "Despres d'editar una incidencia, la taula torna a mostrar tots els registres.",
+    "category": "llistat",
+    "priority": "mitjana",
+    "status": "tancada",
+    "assignee": "equip-dades",
+    "created_at": "2026-08-07T08:10:00+00:00",
+    "updated_at": "2026-11-23T14:29:24+00:00",
+    "due_date": "2026-12-12",
+    "tags": [
+      "taula",
+      "filtre"
+    ]
+  },
+  {
+    "id": "INC-0003",
+    "title": "Falta confirmacio abans d'eliminar",
+    "description": "La supressio d'una incidencia ha de demanar confirmacio per evitar errors de l'usuari.",
+    "category": "usabilitat",
+    "priority": "baixa",
+    "status": "tancada",
+    "assignee": "abc",
+    "created_at": "2026-08-07T08:20:00+00:00",
+    "updated_at": "2026-11-23T14:30:16+00:00",
+    "due_date": "2026-10-10",
+    "tags": [
+      "dialog",
+      "validacio"
+    ]
+  }
+]
